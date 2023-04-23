@@ -1,4 +1,4 @@
-package JavaOOP._017_Creating_our_own_types_Classes.Main;
+package JavaOOP._017_Creating_our_own_types_Classes;
 
 import java.util.Arrays;
 import java.util.List;
