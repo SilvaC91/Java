@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Exercises {
     public static void main(String[] args) {
+
         exercise2();
+        exercise3();
     }
 
     /**
@@ -21,24 +23,32 @@ public class Exercises {
 
     /**
      * 2: use the class called 'Student', add variables
-     *    (class variables are called 'fields' or 'attributes')
-     *    called 'name' and 'age'
-     *
-     *    Using the function below set the student name and ages
-     *
+     * (class variables are called 'fields' or 'attributes')
+     * called 'name' and 'age'
+     * <p>
+     * Using the function below set the student name and ages
      */
     private static void exercise2() {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
 
+
         // Use a for i loop
+        for (int i = 0; i < studentNames.size(); i++) {
+            Student stdnt = createNewStudent(studentNames.get(i), studentAges.get(i));
+            System.out.println(stdnt.name + " " + stdnt.age);
+        }
+
+
     }
 
     private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
 
         // Write your code here
+        student.name = name;
+        student.age = age;
 
         return student;
     }
@@ -59,6 +69,36 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        // Write your code here
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+
+        Course crs = new Course();
+        for (int i = 0; i < studentNames.size(); i++) {
+            Student stdnt = createNewStudent(studentNames.get(i), studentAges.get(i));
+            crs.students.add(stdnt);
+        }
+        for (Student std : crs.students) {
+            System.out.println(std.name);
+            System.out.println(std.age);
+        }
+
+        float totalAge = 0;
+        for (int i = 0; i < studentAges.size(); i++) {
+            totalAge += studentAges.get(i);
+        }
+        float averageAge = totalAge / studentAges.size();
+        System.out.println(averageAge);
+    }
+
+
+
+    private static Course createNewCourse(Student studentX) {
+        Course course = new Course();
+        course.students.add(studentX);
+
+        return course;
     }
 }
+
+
+
