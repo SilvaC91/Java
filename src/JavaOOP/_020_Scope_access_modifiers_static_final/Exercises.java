@@ -3,6 +3,11 @@ package JavaOOP._020_Scope_access_modifiers_static_final;
 import java.util.Random;
 
 public class Exercises {
+
+    private static final int NUM_OF_WEEKS = 52;
+    private static final int NUM_OF_DAYS= 7;
+    private static final int NUM_OF_HOURS = 24;
+
     public static void main(String[] args) {
         exercise1();
         exercise2();
@@ -65,11 +70,11 @@ public class Exercises {
      *    and can be accessed anywhere in this class, but nowhere else.
      *    use SNAKE_CASE naming
      */
-    public static void exercise4() {                    //Non capisco cosa devo fare in questo esercizio
+    public static void exercise4() {
         System.out.println("\nExercise 4:");
-        for (int week = 0; week < 52; week++) {
-            for (int day = 0; day < 7; day++) {
-                for (int hour = 0; hour < 24; hour++) {
+        for (int week = 0; week < NUM_OF_WEEKS; week++) {
+            for (int day = 0; day < NUM_OF_DAYS; day++) {
+                for (int hour = 0; hour < NUM_OF_HOURS; hour++) {
                     System.out.println("Week " + week +", day " + day +", hour " + hour);
                 }
             }
