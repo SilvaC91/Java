@@ -29,7 +29,7 @@ public class Exercises {
         ourSet.add(2);
         ourSet.add(1);
 
-        if (ourSet.containsAll(Set.of(1, 5, 2))) {
+        if (ourSet.containsAll(List.of(1, 1, 5, 2, 1))) {
             System.out.println("1a. Set contains all numbers");
         } else {
             System.out.println("1a. Set does not contain all numbers");
@@ -76,7 +76,7 @@ public class Exercises {
         fruitsSet.addAll(fruitsList);
 
         //2b. What will this output? [Write your guesses in here]
-        // apple, banana, grapes, pear, mango, apple, banana, grapes, pear, mango
+        // apple, banana, orange, kiwi, mango, grapes, pear
         System.out.println(fruitsSet);
     }
 
