@@ -29,7 +29,7 @@ public class Exercises {
         ourSet.add(2);
         ourSet.add(1);
 
-        if (ourSet.containsAll(Set.of(1, 1, 5, 2, 1))) {
+        if (ourSet.containsAll(Set.of(1, 5, 2))) {
             System.out.println("1a. Set contains all numbers");
         } else {
             System.out.println("1a. Set does not contain all numbers");
@@ -135,16 +135,13 @@ public class Exercises {
         //     you can use `break;` to exit the loop once you've found it!
         int min = Integer.MAX_VALUE;
         // Your code
-        int i = 0;
         for (int number : orderedNumbers){
-            if(i==0){
-                if(number < min){
-                    min = number;
-                }
-                i++;
-            }else{
-                break;
+            if(number < min){
+                min = number;
             }
+            break;
+
+
         }
 
 
