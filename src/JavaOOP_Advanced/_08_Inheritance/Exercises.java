@@ -47,7 +47,7 @@ public class Exercises {
         System.out.println(trota.getHeight());
         System.out.println(trota.getWeight());
 
-        Bird aquila = new Bird(2.0,76.4,4.2);
+        Bird aquila = new Bird(200.0,76.4,4.2);
         System.out.println(aquila.getWingSpan());
         System.out.println(aquila.getHeight());
         System.out.println(aquila.getWeight());
@@ -73,7 +73,7 @@ public class Exercises {
         Fish trota = new Fish("Trota",12.4,2.5);
         double fishSpeed = trota.swimSpeedMetersPerSecond(trota.getWeight());
 
-        Bird aquila = new Bird(2.0,76.4,4.2);
+        Bird aquila = new Bird(200.0,76.4,4.2);
         double birdSpeed = aquila.flySpeedMetersPerSecond(aquila.getWingSpan());
 
        double fastestAnimal = Math.max(dogSpeed, fishSpeed);
