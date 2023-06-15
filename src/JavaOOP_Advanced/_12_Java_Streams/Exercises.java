@@ -69,9 +69,9 @@ public class Exercises {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
-        List<String> alice = List.of("Alice", "Bob", "Charlie");
+        Set<String> alice = Set.of("Alice", "Bob", "Charlie");
         // Your code here
-        alice = alice.stream().map(str -> str.toUpperCase()).collect(Collectors.toList());
+        alice = alice.stream().map(str -> str.toUpperCase()).collect(Collectors.toSet());
         System.out.println(alice);
     }
 

@@ -1,0 +1,18 @@
+Esercizio 1:
+Scrivere un interfaccia Guidabile che contiene il metodo "Guida"
+Creare una classe Macchina che implementa l'interfaccia e il suo metodo.
+La classe dovra' contenere le seguenti var di istanza:
+- Marca
+- Modello
+- Carburante Attuale (espresso in litri)
+- Capacita Serbatoio
+Il metodo implementato dall'interfaccia dovra' ridurre il serbatoio, prendendo come parametri il numero di litri usati
+Prevdere un metodo per inserire la benzina, e fare un controllo per guidare in base alla quantita' di benzina rimasta.
+
+Esercizio 2:
+- Modificiare il metodo relativo all'inserimento della benzina e della guida lanciando un eccezione in caso di situazione errata, gestire il tutto con un try catch lato Main.
+- Inserire una Collection che rappresenta la lista dei nomi del proprietari e un metodo per stamparli tutti.
+
+Esercizio 3:
+- Effettua un Override del metodo toString per stampare tutti i dati della macchina in modo esplicito.
+- Scrivi un metodo "Tagliando" che crea un file e ci scrive dentro i valori restituiti dal metodo toString
