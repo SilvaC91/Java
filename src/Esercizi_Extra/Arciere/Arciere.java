@@ -1,6 +1,12 @@
 package Esercizi_Extra.Arciere;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Arciere extends Person implements Playable{
 
@@ -44,8 +50,12 @@ public class Arciere extends Person implements Playable{
             throw new Exception("Numero frecce a disposizione insufficienti");
         }else {
             int totaleScore = 0;
+            Random random = new Random();
+            int min = 1;
+            int max = 10;
+
             for (int i =0; i<frecceDaLanciare; i++){
-                totaleScore += Math.random() * 10;
+                totaleScore += random.nextInt(max - min + 1) + min;
             }
             this.numFrecce -= frecceDaLanciare;
             scores.add(totaleScore);
@@ -68,6 +78,14 @@ public class Arciere extends Person implements Playable{
                " Cognome= "   + this.getCognome() +
                " Arco= "   + this.nomeArco +
                " Punteggi= " + this.scores;
+    }
+
+    public void scriviScoreInFile() throws IOException {
+        Path scoresPath = Paths.get("scores.txt");
+        Files.createFile(scoresPath);
+        Files.writeString(scoresPath, this.toString());
+
+
     }
 
 

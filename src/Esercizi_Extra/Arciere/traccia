@@ -7,8 +7,11 @@ L'Arciere avra' inoltre i seguenti campi:
 Numero di frecce
 Nome Arco
 Lista di interi chiamata "scores"
-Il metodo Play deve simulare una sessione di allenamento di tiro con arco, prende come parametro il numero di frecce che l'arciere vuole usare e estrae casualmente un punteggio da 1 a 10 per ogni freccia scoccata, il totale sara' il punteggio dell'allenamento e verra' inserito nella lista "Scores" che rappresenta la lista dei punteggi fatti nei vari allenamenti.
-Ovviamente se il numero di frecce passato come parametro alla funzione e' piu grande delle frecce che l'arciere ha attualmente a disposizione deve essere segnalato un errore, gestiscilo come meglio credi.
+Il metodo Play deve simulare una sessione di allenamento di tiro con arco, prende come parametro il numero di frecce che
+l'arciere vuole usare e estrae casualmente un punteggio da 1 a 10 per ogni freccia scoccata, il totale sara' il punteggio
+dell'allenamento e verra' inserito nella lista "Scores" che rappresenta la lista dei punteggi fatti nei vari allenamenti.
+Ovviamente se il numero di frecce passato come parametro alla funzione e' piu grande delle frecce che l'arciere ha attualmente
+a disposizione deve essere segnalato un errore, gestiscilo come meglio credi.
 Creare un metodo rifornimento che aggiunge delle frecce all'arciere.
 Creare un metodo che stampa la lista degli score
 
@@ -16,6 +19,3 @@ BONUS:
 
 Sovrascrivere il metodo toString a piacimento.
 Creare un metodo che scriva dentro un file gli score effettuati
-﻿
-naigel2
-naigel2#2679
