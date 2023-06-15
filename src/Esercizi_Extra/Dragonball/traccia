@@ -1,0 +1,10 @@
+Vogliamo creare un videogioco basato sul famosissimo manga di Akira Toriyama, nel quale i vari personaggi possono combattere
+tra di loro in una sorta di Torneo Tenkaichi.
+Ogni personaggio ha un nome, dei punti vita, una lista di 4 possibili attacchi personalizzati e una forza fisica.
+Inoltre ogni personaggio ha un valore compreso tra 0 ed 1 che rappresenta la sua capacità di schivare attacchi e un valore compreso
+tra 0 ed 1 che rappresenta la sua resistenza fisica.
+Ogni attacco possibile ha un nome, un valore rappresentante la quantità di danno, e un valore compreso tra 0 ed 1 che rappresenta
+la probabilità che l’attacco vada a segno.
+Notare che per calcolare la probabilità che un attacco A vada a segno su un personaggio P sarà data dal prodotto della probabilità
+che l’attacco vada a segna con la probabilità che l’attacco venga schivato.
+Quindi se per esempio il personaggio Goku utilizza il’attacco “Kaikoen” che ha probabilità 0.9 di successo
