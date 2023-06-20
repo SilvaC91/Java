@@ -1,0 +1,19 @@
+Esercizio:
+Scrivere un interfaccia 'Computable' che contiene il metodo "computeArea"
+Creare una classe (decide te se necessario astratta o no) "figura" che implementa l'interfaccia e il suo metodo.
+Creare un altra classe "quadrato" che estende figura.
+La classe "figura" dovra' contenere le seguenti var di istanza:
+nome
+perimetro
+area
+La classe "quadrato" dovra' contenere le seguenti var di istanza:
+lato
+
+Durante il calcolo dell'area deve essere fatto un check per verificare se i numeri che ci servono per
+effettuare il calcolo non sia negativi, in caso contrario lancia un eccezione e gestiscila.
+Effettuare un Override del metodo toString per restituire una descrizione della figura.
+Scrivere un metodo che stampa il risultato del metodo toString su un file
+
+Implementare costruttore e metodi getter e setter e testare il calcolo dell'area.
+
+Testare tutto su un metodo Main.
